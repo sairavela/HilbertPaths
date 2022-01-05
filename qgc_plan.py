@@ -4,7 +4,7 @@ Created on Wed Jan 13 04:41:17 2021
 
 @author: erina
 """
-coordinates = open('positions.plan', 'r')
+coordinates = open('positions.txt', 'r')
 lines = coordinates.read().split('\n') 
 x_coord = lines[0].split(',')
 y_coord = lines[1].split(',')
