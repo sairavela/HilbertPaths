@@ -8,7 +8,7 @@ coordinates = open('positions.txt', 'r')
 lines = coordinates.read().split('\n') 
 x_coord = lines[0].split(',')
 y_coord = lines[1].split(',')
-file = open('flightpath.txt', 'w')
+file = open('flightpath.plan', 'w')
 size = len(x_coord)
 file.write('{\n    "fileType": "Plan",\n    "geoFence": {\n        "circles": [\n        ],\n        "polygons": [\n        ],\n        "version": 2\n    },\n    "groundStation": "QGroundControl",\n    "mission": {\n        "cruiseSpeed": 15,\n        "firmwareType": 12,\n        "hoverSpeed": 5,\n        "items": [')
 
