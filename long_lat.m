@@ -3,11 +3,10 @@
 % Change parameter on numerical values of convert_h
 % Creates txt file with waypoints to be used as input in the python file to
 % make the file plan for QGC
-
-points = hilbercurve(2); %order
+points = vd_hilbertcurve(1,2,3,4, 4) * 2; %order
 
 % The parameter points should not be changed
-position = convert_h(points, 3, 47.8, 8); %(points, distance, lat, lon)
+position = convert_h(points', 3, 47.8, 8); %(points, distance, lat, lon)
 
 x = position(1,:);
 y = position(2,:);
